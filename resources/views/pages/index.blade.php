@@ -8,13 +8,7 @@
   <div class="container">
       <div class="row">
         {{-- Main Content --}}
-        @include ('pages.component.index.mainContent')
-        
-        {{-- left side bar  --}}
-        @include ('pages.component.index.leftSideBar')
-          
-        {{-- Right side bar  --}}
-        @include ('pages.component.index.rightSideBar')
+        @include ('pages.component.book.leftSideBar')
       </div>
   </div>
 </div>

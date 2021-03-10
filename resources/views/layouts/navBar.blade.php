@@ -83,3 +83,15 @@
     </div>
   </nav>
 @endif
+
+@if (session()->has('level'))
+    <div class="ar-alert-msg">
+        <div class="alert alert-icon alert-white alert-{{ session('level') }} alert-dismissible fade show" role="alert">
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                <span aria-hidden="true">×</span>
+            </button>
+            <i class="mdi mdi-check-all"></i>
+            <strong>Well done!</strong> {{ session('msg') }}
+        </div>
+    </div>
+@endif

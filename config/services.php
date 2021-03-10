@@ -33,7 +33,7 @@ return [
     'google' => [
         'client_id' => '363772657982-rurhdm15iaplbb0pv1kdsrah6rcf5l64.apps.googleusercontent.com',
         'client_secret' => 'jGY4Finfyj3ztcWdLUZkkkec',
-        'redirect' => 'http://localhost/a/bookstore/callback'
+        'redirect' => 'http://localhost/bookstore/callback'
     ],
     
 

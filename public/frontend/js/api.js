@@ -123,8 +123,8 @@
   
   // like store 
   $("body").on("click", ".emojiArea span", function (event) {
-    var like = $(this).attr('class');   
-    var post_id = $(this).attr('id');  
+    var like = $(this).attr('class'); 
+    var book_id = $(this).attr('ids'); 
     $.ajax({
       headers: {
         'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
@@ -133,10 +133,10 @@
       url: 'like',
       data: {
         like: like,
-        post_id: post_id,
+        book_id: book_id,
       },
       success: function (data) {
-        $(".ar_like_count_"+post_id).html(`<span class="mr-2 like_count">${data.countLike}</span>Like`)
+        $(".ar_like_count_"+book_id).html(`<span class="mr-2 like_count">${data.countLike}</span>Like`)
       }
     })
   })

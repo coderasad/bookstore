@@ -34,17 +34,35 @@
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="form-group">
-                                <label class="mb-1">Email</label>
-                                <div class="position-relative icon-form-control">
-                                    <i class="feather-at-sign position-absolute"></i>
-                                    <input class="form-control{{ $errors->has('email') ? ' is-invalid' : '' }}" type="email" name="email" value="{{ old('email') }}" required autofocus placeholder="Email">
-                                    @if ($errors->has('email'))
-                                        <span class="invalid-feedback" role="alert">
-                                            <strong>{{ $errors->first('email') }}</strong>
-                                        </span>
-                                    @endif   
+                            </div>                            
+                            <div class="form-row">                                
+                                <div class="col">
+                                    <div class="form-group">
+                                        <label class="mb-1">Email</label>
+                                        <div class="position-relative icon-form-control">
+                                            <i class="feather-at-sign position-absolute"></i>
+                                            <input class="form-control{{ $errors->has('email') ? ' is-invalid' : '' }}" type="email" name="email" value="{{ old('email') }}" required autofocus placeholder="Email">
+                                            @if ($errors->has('email'))
+                                                <span class="invalid-feedback" role="alert">
+                                                    <strong>{{ $errors->first('email') }}</strong>
+                                                </span>
+                                            @endif   
+                                        </div>
+                                    </div>
+                                </div>                              
+                                <div class="col">
+                                    <div class="form-group">
+                                        <label class="mb-1">phone</label>
+                                        <div class="position-relative icon-form-control">
+                                            <i class="feather-phone position-absolute"></i>
+                                            <input class="form-control{{ $errors->has('phone') ? ' is-invalid' : '' }}" type="text" name="phone" value="{{ old('phone') }}" required autofocus placeholder="phone">
+                                            @if ($errors->has('phone'))
+                                                <span class="invalid-feedback" role="alert">
+                                                    <strong>{{ $errors->first('phone') }}</strong>
+                                                </span>
+                                            @endif   
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                             <div class="form-row">

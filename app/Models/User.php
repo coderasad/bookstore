@@ -18,16 +18,24 @@ class User extends Authenticatable
      */
     protected $fillable = [
         'role_id',
+        'user_type',
         'name',
         'email',
+        'phone',
         'password',
         'google_id',
-        'img'
+        'img',
+        'address',
+        'birthday',
 
     ];
 
     public function role(){
         return $this->belongsTo('App\Models\Role');
+    }
+
+    public function book(){
+        return $this->hasMany('App\Models\Book');
     }
 
     /**

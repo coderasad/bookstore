@@ -31,6 +31,14 @@
 	<!-- Pixel Code for https://socialproofo.com/demo/ -->
 	<script async src="https://socialproofo.com/demo/pixel/g2mvtsxw6hc399gbd318oap8n6y48pq2"></script>
 	<!-- END Pixel Code -->
+	
+	<script>
+		// hide alert msg 
+		setTimeout(function() {
+			$("div.ar-alert-msg").remove();
+		}, 5000); // 5 secs
+		   
+   </script>
 </body>
 
 </html>

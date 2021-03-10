@@ -22,14 +22,14 @@
                             @csrf
 
                             <div class="form-group">
-                                <label class="mb-1">Email</label>
-                                <label class="mb-1 float-right">asad@gmail.com</label>
+                                <label class="mb-1">Phone</label>
+                                <label class="mb-1 float-right"></label>
                                 <div class="position-relative icon-form-control">
-                                    <input type="email" name="email" class="form-control {{ $errors->has('email') ? ' is-invalid' : '' }}" value="{{ old('email') }}" >
+                                    <input type="text" name="phone" class="form-control {{ $errors->has('phone') ? ' is-invalid' : '' }}" value="00000000000" autocomplete="off" >
                                     <i class="feather-user position-absolute"></i>
-                                    @if ($errors->has('email'))
+                                    @if ($errors->has('phone'))
                                         <span class="invalid-feedback" role="alert">
-                                            <strong>{{ $errors->first('email') }}</strong>
+                                            <strong>{{ $errors->first('phone') }}</strong>
                                         </span>
                                     @endif 
                                 </div>
@@ -38,7 +38,7 @@
                             <div class="form-group">
                                 <label class="mb-1">Password</label>
                                 <div class="position-relative icon-form-control">
-                                    <input type="password" class="form-control {{ $errors->has('password') ? ' is-invalid' : '' }}" name="password" value="asad@gmail.com">
+                                    <input type="password" class="form-control {{ $errors->has('password') ? ' is-invalid' : '' }}" name="password" value="12345678">
                                     <i class="feather-unlock position-absolute"></i>
                                     @if ($errors->has('password'))
                                         <span class="invalid-feedback" role="alert">

@@ -14,7 +14,7 @@
                                 <span class="text-danger">*</span>
                             </label>
                             <div class="form-group">
-                                <input type="text" class="form-control" name="name" value="{{Auth::user()->name}}" placeholder="Enter your name" autocomplete="off">
+                                <input type="text" required class="form-control" name="name" value="{{Auth::user()->name}}" placeholder="Enter your name" autocomplete="off">
                             </div>
                         </div>
                     </div>
@@ -25,7 +25,7 @@
                                 <span class="text-danger">*</span>
                             </label>
                             <div class="form-group">
-                                <input type="text" class="form-control" name="occupation" value="{{Auth::user()->occupation}}" placeholder="Enter your Occupation" autocomplete="off" >
+                                <input type="text" required class="form-control" name="occupation" value="{{Auth::user()->occupation}}" placeholder="Enter your Occupation" autocomplete="off" >
                             </div>
                         </div>
                     </div>
@@ -38,7 +38,7 @@
                                 <span class="text-danger">*</span>
                             </label>
                             <div class="form-group mb-1">
-                                <input type="email" class="form-control" name="email" value="{{Auth::user()->email}}" readonly >
+                                <input type="email" class="form-control" name="email" value="{{Auth::user()->email}}" >
                                 <small class="form-text text-muted">We'll never share your email with anyone else.</small>
                             </div>
                         </div>
@@ -50,7 +50,31 @@
                                 <span class="text-danger">*</span>
                             </label>
                             <div class="form-group">
-                                <input class="form-control" type="tel" name="phone" value="{{Auth::user()->phone}}" placeholder="Enter your phone number" autocomplete="off">
+                                <input class="form-control" type="tel" name="phone" value="{{Auth::user()->phone}}" readonly placeholder="Enter your phone number" autocomplete="off">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-6 mb-2">
+                        <div class="js-form-message">
+                            <label id="address" class="form-label">
+                                Address
+                                <span class="text-danger">*</span>
+                            </label>
+                            <div class="form-group mb-1">
+                                <input type="text" id="address" required class="form-control" name="address" value="{{Auth::user()->address}}" >
+                            </div>
+                        </div>
+                    </div>                    
+                    <div class="col-sm-6 mb-2">
+                        <div class="js-form-message">
+                            <label id="birthday" class="form-label">
+                                Date of Birth
+                                <span class="text-danger">*</span>
+                            </label>
+                            <div class="form-group">
+                                <input class="form-control" type="date" name="birthday" value="{{Auth::user()->birthday}}" required placeholder="Enter your birthday" autocomplete="off">
                             </div>
                         </div>
                     </div>
